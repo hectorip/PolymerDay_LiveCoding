@@ -1,0 +1,21 @@
+<dom-module id="nice-quote">
+        <template>
+            <span>{{author}}</span>
+            <content></content> 
+        </template>
+</dom-module>
+<script>
+        Polymer({
+            is: "nice-quote",
+            properties: {
+                author: {
+                    type: String,
+                    value: "Me"
+                }
+            },
+            ready: function(){
+                // this.author = "Me"
+                console.log(this.author)
+            }
+        });
+        </script>
